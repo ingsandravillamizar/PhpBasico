@@ -15,7 +15,7 @@
      * y recibir la información en otra  pagina e imprimirla en pantalla.
      */
     if(empty($_POST['email']) || empty($_POST['title']) || empty($_POST['content'])){  //si esta vacio?
-        header("Location: home.php");
+        header("Location: home.php");  //Redireccionar
     }
 ?>
 <!DOCTYPE html>

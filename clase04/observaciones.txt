@@ -1,0 +1,13 @@
+<li><a href="home.php?id=23&name=Miguel">Vinculos</a></li>
+home.php? para enviar parametros
+
+ echo "ID: " . $_GET['id'];
+ echo "Nombre: " . $_GET['name'];
+
+ Recupero los parametros de la URL
+ 
+ NO ES     S E  G  U R O  
+    -- Se puede ver los datos en la URl.   ej  contraseñas,  tarjetas de credito ,  datos sensibles.
+
+
+Metodos:    isset     empty
