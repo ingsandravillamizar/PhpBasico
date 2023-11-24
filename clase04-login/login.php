@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,9 +19,17 @@
                 </div>
    
 
-                <form  action="home.php" method="post">
-                    <input  type="email"    name="usuario"  placeholder="Usuario"     required>
-                    <input  type="Password" name="password" placeholder="Contraseña"  required>
+                <form  action="auth.php" method="post">
+                    <?php
+                        if(!empty($_SESSION['mensajeError'])) {
+                            echo $_SESSION['mensajeError'];
+                        }
+
+                    ?>
+
+                    
+                    <input  type="email"    name="email"    placeholder="Ingrese su correo electrónico"     >
+                    <input  type="Password" name="password" placeholder="Ingrese su Contraseña"   >
                     <button type="submit">Iniciar sesión</button>
                 </form>
                 

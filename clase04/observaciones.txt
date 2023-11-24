@@ -11,3 +11,9 @@ home.php? para enviar parametros
 
 
 Metodos:    isset     empty
+
+
+
+
+
+https://www.mycompiler.io/es     Para programar en linea sin instalaciones

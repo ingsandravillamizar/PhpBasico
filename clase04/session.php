@@ -11,11 +11,12 @@
 
     $_SESSION['name'] = 'Maria';
 
-    $_SESSION['id'] = 99;
+    $_SESSION['id'] = 99;    //Cambiando una variable
 
-    echo $_SESSION['id'];
+    echo $_SESSION['id'];   // imprimiendo variable de $_SESSION
 
-    unset($_SESSION['id']); //eliminar
+    unset($_SESSION['id']); //eliminar la variable id del array $_SESSION
     
-    print_r($_SESSION);
+    print_r($_SESSION);     //imprimir array $_SESSION
+
 
